@@ -1,0 +1,69 @@
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+.btn-group1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+
+.btn{
+    width: 15em;
+    height: 15em;
+}
+
+.btn-group2 {
+    padding-top: 50px;
+    text-align: center;
+    gap: 20px;
+}
+
+.btn2{
+    width: 5em;
+    height: 5em;
+    border: solid blueviolet;
+    padding-top: 1.5em;
+}
+
+.btn-check + .btn-outline-primary2{
+    color: blueviolet;
+}
+
+.btn-check:checked + .btn-outline-primary2, .btn-check:active + .btn-outline-primary2, .btn-outline-primary2:active, .btn-outline-primary2.active, .btn-outline-primary2.dropdown-toggle.show {
+  color: #fff;
+  background-color: blueviolet;
+  border-color: blueviolet;
+}
+
+.btn-outline-primary2:hover {
+  color: #fff;
+  background-color: blueviolet;
+  border-color: blueviolet;
+}
+
+.result-group{
+    padding-top: 50px;
+}
+
+.btn3{
+    width: 15em;
+    height: 5em;
+    border: solid cornflowerblue;
+    color: cornflowerblue;
+    background-color: ghostwhite;
+}
+
+.btn3_l{
+    padding-top: 1.5em;
+}
+
+.btn3-primary:hover {
+  color: #fff;
+  background-color: cornflowerblue;
+  border-color: cornflowerblue;
+}

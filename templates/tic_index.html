@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Play Tic Tac Toe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="/static/tic_css.css" rel="stylesheet">
+    <script src="/static/tic_script.js" defer></script>
+
+
+</head>
+
+    <body>
+        {% block content %}
+        <div class="container">
+            <div class="btn-group1">
+                <button type="button" class="btn btn-outline-primary" id="button0">
+                    {{ result.buttons[0].choice }}
+                </button>
+                <button type="button" class="btn btn-outline-primary" id="button1">
+                    {{ result.buttons[1].choice }}
+                </button>
+                <button type="button" class="btn btn-outline-primary" id="button2">
+                    {{ result.buttons[2].choice }}
+                </button>
+                <button type="button" class="btn btn-outline-primary" id="button3">
+                    {{ result.buttons[3].choice }}
+                </button>
+                <button type="button" class="btn btn-outline-primary" id="button4">
+                    {{ result.buttons[4].choice }}
+                </button>
+                <button type="button" class="btn btn-outline-primary" id="button5">
+                    {{ result.buttons[5].choice }}
+                </button>
+                <button type="button" class="btn btn-outline-primary" id="button6">
+                    {{ result.buttons[6].choice }}
+                </button>
+                <button type="button" class="btn btn-outline-primary" id="button7">
+                    {{ result.buttons[7].choice }}
+                </button>
+                <button type="button" class="btn btn-outline-primary" id="button8">
+                    {{ result.buttons[8].choice }}
+                </button>
+            </div>
+
+            <div class="btn-group2">
+                <div class="btn-group2_1">
+                    <input type="radio" class="btn-check" name="btnradio" id="button_easy" autocomplete="off"
+                           onchange="check()">
+                    <label class="btn2 btn-outline-primary2" for="button_easy">Easy</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="button_hard" autocomplete="off"
+                           onchange="check()">
+                    <label class="btn2 btn-outline-primary2" for="button_hard">Hard</label>
+                </div>
+                <div class="result-group">
+                    <button type="button" class="btn3 btn3-primary" id="button_restart">
+                        Restart The Game?
+                    </button>
+                </div>
+                <div class="result-group">
+                    <input type="text" class="btn-check" id="button_result">
+                    <label class="btn3 btn3_l" id="label_result" for="button_result">
+                        Choose Easy or Hard
+                    </label>
+                </div>
+            </div>
+        </div>
+        {% endblock %}
+    </body>
+
+</html>
+
